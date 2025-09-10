@@ -5,7 +5,7 @@ import { Chrome } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="flex flex-1 flex-col items-center">
-      <div className="absolute top-0 z-0 h-[800px] w-full bg-gradient-to-b from-white via-sky-400/20 to-sky-400/70 bg-top bg-no-repeat sm:h-[900px] sm:bg-center xl:h-[867px]" />
+      <div className="absolute top-0 z-0 h-[800px] w-full bg-gradient-to-b from-white via-sky-400/20 to-transparent bg-top bg-no-repeat sm:h-[900px] sm:bg-center xl:h-[867px]" />
       <div className="container relative">
         <div className="z-0 hidden w-full sm:block">
           {/* Removed Floating Image Icons */}
