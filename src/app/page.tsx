@@ -16,7 +16,7 @@ export default function HomePage() {
         <HeroSection />
         <WorksWhereYouWork />
         <section className="container">
-          <div className="bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-12 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24">
+          <div className="bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-4 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24 border border-border">
             <ResearchFeature />
             <QuickEditsFeature />
           </div>

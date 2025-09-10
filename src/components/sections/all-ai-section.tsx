@@ -33,7 +33,7 @@ const icons = [
 const AllAiSection = () => {
   return (
     <section className="container">
-      <div className="relative bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-12 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24">
+      <div className="relative bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-12 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24 border border-border">
         {icons.map((icon) => (
           <Image
             key={icon.alt}
@@ -47,13 +47,13 @@ const AllAiSection = () => {
         ))}
 
         <div className="relative z-10 flex flex-col items-center gap-6">
-          <h2 className="font-sans text-center text-2xl sm:text-4xl font-bold text-sky-900 transition-all leading-snug">
+          <h2 className="font-sans text-center text-2xl sm:text-4xl font-bold text-foreground transition-all leading-snug">
             Optimized for{" "}
-            <mark className="bg-sky-200/50 text-sky-900 px-2 rounded-lg py-1">
+            <mark className="bg-accent text-foreground px-2 rounded-lg py-1">
               accounting cases.
             </mark>
           </h2>
-          <p className="text-center font-sans lg:max-w-xl max-w-sm sm:max-w-lg text-sky-800 text-sm sm:text-base md:text-lg font-medium">
+          <p className="text-center font-sans lg:max-w-xl max-w-sm sm:max-w-lg text-muted-foreground text-sm sm:text-base md:text-lg font-medium">
             VibeLearn Agent brings together ChatGPT, Gemini, Claude, Perplexity
             and more in a single Chrome extension, giving you the power of all
             AI models with one click.
@@ -61,7 +61,7 @@ const AllAiSection = () => {
           <div className="h-12 w-fit">
             <Button
               asChild
-              className="h-full w-fit px-6 text-base font-bold !rounded-lg bg-sky-600 text-primary-foreground shadow-[0_6px_0_0_rgb(3,105,161)] hover:bg-sky-600/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_rgb(3,105,161)] active:translate-y-[4px] active:shadow-[0_2px_0_0_rgb(3,105,161)] transition-all duration-200"
+              className="h-full w-fit px-6 text-base font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200"
             >
               <Link
                 href="https://vibelearn.com/extension"

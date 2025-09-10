@@ -44,7 +44,7 @@ const icons = [
 const WorksWhereYouWork = () => {
   return (
     <section className="container mt-8 sm:mt-12 mb-8 sm:mb-12">
-      <div className="relative bg-sky-50 rounded-2xl p-8 sm:p-12 border border-sky-100">
+      <div className="relative rounded-2xl p-8 sm:p-12 border bg-secondary border-border">
         {/* {icons.map((icon) => (
           <div key={icon.alt} className={icon.containerClasses}>
             <Image
@@ -57,23 +57,23 @@ const WorksWhereYouWork = () => {
           </div>
         ))} */}
         <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="font-display text-4xl font-bold text-sky-900">
+          <h2 className="font-display text-4xl font-bold text-foreground">
             Get into{" "}
-            <mark className="relative bg-sky-200/70 inline-block px-2 py-1 -rotate-1 rounded-lg">
+            <mark className="relative bg-accent inline-block px-2 py-1 -rotate-1 rounded-lg">
               Ivey
             </mark>
           </h2>
-          <p className="text-lg max-w-2xl text-sky-800 font-medium">
-            Vibe is a Chrome extension that fits into your existing workflows.
-            Create, Research and Edit in Google Docs, PDFs, Web pages, YouTube
-            and more.
+          <p className="text-lg max-w-2xl text-muted-foreground font-medium">
+            Your peers are already leveraging AI tools to get ahead. This isn’t
+            about working <em>harder</em>, it’s about working <em>smarter</em>{" "}
+            and proving to Ivey that you’re top-tier.
           </p>
           <div className="h-12 w-fit">
             <Link
               href="/extension"
               className="h-full w-fit flex items-center justify-center group"
             >
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-sky-600 font-bold text-white !rounded-lg shadow-[0_6px_0_0_rgb(3,105,161)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_rgb(3,105,161)] active:translate-y-[4px] active:shadow-[0_2px_0_0_rgb(3,105,161)] transition-all duration-200 rounded-md h-full w-fit text-base px-6">
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-primary font-bold text-primary-foreground !rounded-lg shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 h-full w-fit text-base px-6">
                 <div className="flex justify-center items-center gap-2">
                   Get Started
                 </div>

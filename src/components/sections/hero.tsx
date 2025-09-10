@@ -5,7 +5,7 @@ import { Chrome } from "lucide-react";
 const HeroSection = () => {
   return (
     <div className="flex flex-1 flex-col items-center">
-      <div className="absolute top-0 z-0 h-[800px] w-full bg-gradient-to-b from-white via-sky-400/20 to-transparent bg-top bg-no-repeat sm:h-[900px] sm:bg-center xl:h-[867px]" />
+      <div className="absolute top-0 z-0 h-[800px] w-full bg-gradient-to-b from-white via-[#BCF3FF]/30 to-transparent bg-top bg-no-repeat sm:h-[900px] sm:bg-center xl:h-[867px]" />
       <div className="container relative">
         <div className="z-0 hidden w-full sm:block">
           {/* Removed Floating Image Icons */}
@@ -18,18 +18,18 @@ const HeroSection = () => {
                   {/* Removed Floating Image Icons */}
                 </div>
                 <div className="hidden sm:block sm:mb-4" />
-                <h1 className="font-sans text-center text-3xl font-bold leading-tight text-sky-600 transition-all sm:text-5xl sm:leading-tight md:text-5xl lg:text-7xl">
+                <h1 className="font-sans text-center text-3xl font-bold leading-tight text-primary transition-all sm:text-5xl sm:leading-tight md:text-5xl lg:text-7xl">
                   The AI Business Case Solver
                   <br />
-                  <span className="font-black text-sky-900 underline decoration-sky-500 decoration-4 underline-offset-8">
+                  <span className="font-black text-[#111111] underline decoration-primary decoration-4 underline-offset-8">
                     that just works
                   </span>
                 </h1>
               </div>
-              <p className="my-0 max-w-sm text-base font-semibold text-sky-800 animate-in fade-in slide-in-from-bottom-6 duration-100 sm:my-2 sm:max-w-xl sm:text-lg md:max-w-3xl md:text-2xl">
+              <p className="my-0 max-w-sm text-base font-semibold text-[#2D2BCA] animate-in fade-in slide-in-from-bottom-6 duration-100 sm:my-2 sm:max-w-xl sm:text-lg md:max-w-3xl md:text-2xl">
                 Beat2257 is the only case-solving tool that prepares you for
                 class. <br />
-                <span className="font-serif text-base font-bold italic text-sky-900 underline sm:text-xl md:text-2xl">
+                <span className="font-serif text-base font-bold italic text-[#111111] underline sm:text-xl md:text-2xl">
                   Never miss contribution marks again.
                 </span>
               </p>
@@ -43,7 +43,7 @@ const HeroSection = () => {
                             href="/extension"
                             className="group flex h-full w-fit items-center justify-center"
                           >
-                            <button className="inline-flex h-full w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-sky-600 px-6 text-base font-bold text-white shadow-[0_6px_0_0_rgb(3,105,161)] transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 group-hover:translate-y-[2px] group-hover:shadow-[0_4px_0_0_rgb(3,105,161)] group-active:translate-y-[4px] group-active:shadow-[0_2px_0_0_rgb(3,105,161)]">
+                            <button className="inline-flex h-full w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 group-hover:translate-y-[2px] group-hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] group-active:translate-y-[4px] group-active:shadow-[0_2px_0_0_var(--color-primary-shadow)]">
                               <div className="flex items-center justify-center gap-2">
                                 Get Started
                               </div>

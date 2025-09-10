@@ -1,42 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 @import "tailwindcss";
 @import "tw-animate-css";
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Shadcn/UI Colors */
-  --color-background: #FFFFFF;
-  --color-foreground: #1E3A5F; /* Dark Navy for foreground */
+  /* Updated Design System Palette */
+  /* Core Brand */
+  --color-background: #ffffff; /* Neutral White */
+  --color-foreground: #111111; /* Dark / Body & Headings */
 
-  --color-card: #FFFFFF;
-  --color-card-foreground: #1E3A5F;
+  --color-primary: #4341ff; /* Primary Blue */
+  --color-primary-foreground: #ffffff;
+  --color-primary-shadow: #2d2bca; /* Darker shade for faux depth shadows */
 
-  --color-popover: #FFFFFF;
-  --color-popover-foreground: #1E3A5F;
+  /* Secondary (Blue-Gray scale) */
+  --color-secondary: #f9f9f9; /* Light Gray 2 surface */
+  --color-secondary-foreground: #111111;
 
-  --color-primary: #1B8DD1; /* Primary Blue */
-  --color-primary-foreground: #FFFFFF;
+  --color-muted: #f6f6f6; /* Light Gray 1 */
+  --color-muted-foreground: #7f91bd; /* Blue-Gray Dark */
 
-  --color-secondary: #F8F9FA; /* Light Gray */
-  --color-secondary-foreground: #1E3A5F;
+  --color-accent: #bcf3ff; /* Light Cyan highlight */
+  --color-accent-foreground: #111111;
 
-  --color-muted: #F8F9FA; /* Light Gray */
-  --color-muted-foreground: #64748B; /* Medium Gray */
+  /* Blue Gray Scale */
+  --color-blue-gray-dark: #7f91bd;
+  --color-blue-gray-light: #7a8dba;
 
-  --color-accent: #E6F3FF; /* Light Blue Background */
-  --color-accent-foreground: #1E3A5F;
+  /* Supporting */
+  --color-card: #fdfdfd; /* Light Gray 3 */
+  --color-card-foreground: #111111;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #111111;
 
-  --color-destructive: #FF6B6B; /* Red/Coral */
-  --color-destructive-foreground: #FFFFFF;
+  --color-destructive: #ff4d4f;
+  --color-destructive-foreground: #ffffff;
 
-  --color-border: #E5E5E5; /* Default border from Shadcn */
-  --color-input: #E5E5E5;
-  --color-ring: #1B8DD1; /* Primary Blue for ring */
+  --color-border: #e4e6eb; /* Subtle neutral border */
+  --color-input: #e4e6eb;
+  --color-ring: #4341ff;
 
   --color-chart-1: #e67e22;
   --color-chart-2: #2d8659;
-  --color-chart-3: #1e3a5f;
+  --color-chart-3: #7f91bd; /* Updated to Blue-Gray Dark */
   --color-chart-4: #f1c40f;
   --color-chart-5: #e74c3c;
 
@@ -50,8 +57,8 @@
   --color-sidebar-ring: #3b82f6;
 
   /* Custom Design Tokens */
-  --color-hero-background: #E6F3FF; /* Light Blue Background */
-  --color-highlight: #B3E5FC; /* Light Blue Highlight */
+  --color-hero-background: #f9f9ff; /* Very light tinted background */
+  --color-highlight: #bcf3ff; /* Accent highlight */
 
   --font-display: "Inter", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -141,7 +148,12 @@
     line-height: 1.6;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: var(--font-display);
     color: var(--color-foreground);
     line-height: 1.2;

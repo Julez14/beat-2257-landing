@@ -1,0 +1,21 @@
+Please use modern designs and follow this color pallette:
+Primary
+
+- Blue: #4341FF
+- Light Cyan: #BCF3FF
+
+Secondary
+
+- Blue-Gray Dark: #7F91BD
+- Blue-Gray Light: #7A8DBA
+
+Neutral / Background
+
+- White: #FFFFFF
+- Light Gray 1: #F6F6F6
+- Light Gray 2: #F9F9F9
+- Light Gray 3: #FDFDFD
+
+Dark
+
+- Button Black: #111111
