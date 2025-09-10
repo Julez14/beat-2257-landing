@@ -1,6 +1,6 @@
 # AI Coding Instructions for beat-2257-landing
 
-This is a Next.js 15 landing page for VibeLearn (AI productivity tool for students) with advanced visual editing capabilities integrated via Orchids visual editing system.
+This is a Next.js 15 landing page for Beat2257 (AI accounting case solver for students) with advanced visual editing capabilities integrated via Orchids visual editing system.
 
 ## Architecture Overview
 

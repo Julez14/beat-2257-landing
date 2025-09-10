@@ -6,6 +6,7 @@ import ResearchFeature from "@/components/sections/research-feature";
 import QuickEditsFeature from "@/components/sections/quick-edits-feature";
 import AllAiSection from "@/components/sections/all-ai-section";
 import Footer from "@/components/sections/footer";
+import Faq from "@/components/sections/faq";
 
 export default function HomePage() {
   return (
@@ -13,10 +14,14 @@ export default function HomePage() {
       <Header />
       <div className="flex flex-col">
         <HeroSection />
-        <TrustedBy />
         <WorksWhereYouWork />
-        <ResearchFeature />
-        <QuickEditsFeature />
+        <section className="container">
+          <div className="bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-12 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24">
+            <ResearchFeature />
+            <QuickEditsFeature />
+          </div>
+        </section>
+        <Faq />
         <AllAiSection />
       </div>
       <Footer />

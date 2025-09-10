@@ -43,9 +43,9 @@ const icons = [
 
 const WorksWhereYouWork = () => {
   return (
-    <section className="container mt-16 sm:mt-24 mb-16 sm:mb-24">
+    <section className="container mt-8 sm:mt-12 mb-8 sm:mb-12">
       <div className="relative bg-sky-50 rounded-2xl p-8 sm:p-12 border border-sky-100">
-        {icons.map((icon) => (
+        {/* {icons.map((icon) => (
           <div key={icon.alt} className={icon.containerClasses}>
             <Image
               alt={icon.alt}
@@ -55,12 +55,12 @@ const WorksWhereYouWork = () => {
               className={icon.imageClasses}
             />
           </div>
-        ))}
+        ))} */}
         <div className="flex flex-col items-center text-center gap-4">
           <h2 className="font-display text-4xl font-bold text-sky-900">
-            Works{" "}
+            Get into{" "}
             <mark className="relative bg-sky-200/70 inline-block px-2 py-1 -rotate-1 rounded-lg">
-              where you work.
+              Ivey
             </mark>
           </h2>
           <p className="text-lg max-w-2xl text-sky-800 font-medium">
@@ -75,8 +75,7 @@ const WorksWhereYouWork = () => {
             >
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-sky-600 font-bold text-white !rounded-lg shadow-[0_6px_0_0_rgb(3,105,161)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_rgb(3,105,161)] active:translate-y-[4px] active:shadow-[0_2px_0_0_rgb(3,105,161)] transition-all duration-200 rounded-md h-full w-fit text-base px-6">
                 <div className="flex justify-center items-center gap-2">
-                  Add to Chrome for Free
-                  <Chrome className="h-8 w-8 group-hover:translate-x-0.5 transition-all" />
+                  Get Started
                 </div>
               </button>
             </Link>

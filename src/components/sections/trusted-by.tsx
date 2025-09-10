@@ -1,13 +1,41 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const logos = [
-  { name: 'MIT', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-892460-mit.png', invert: false },
-  { name: 'Duke University', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-714268-duke.png', invert: false },
-  { name: 'Brown University', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-076332-brown.png', invert: false },
-  { name: 'University of Texas at Dallas', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-739666-utd.png', invert: false },
-  { name: 'University of California, Riverside', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-583621-UCR.png', invert: true },
-  { name: 'University of California, Davis', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-048270-ucd2.png', invert: false },
-  { name: 'University of Michigan', src: 'https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-749178-umich.png', invert: false },
+  {
+    name: "MIT",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-892460-mit.png",
+    invert: false,
+  },
+  {
+    name: "Duke University",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-714268-duke.png",
+    invert: false,
+  },
+  {
+    name: "Brown University",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-076332-brown.png",
+    invert: false,
+  },
+  {
+    name: "University of Texas at Dallas",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-739666-utd.png",
+    invert: false,
+  },
+  {
+    name: "University of California, Riverside",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-583621-UCR.png",
+    invert: true,
+  },
+  {
+    name: "University of California, Davis",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-048270-ucd2.png",
+    invert: false,
+  },
+  {
+    name: "University of Michigan",
+    src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/d215e5e9-5987-48bd-a544-f00fa4600032-vibelearn-com/assets/images/next-749178-umich.png",
+    invert: false,
+  },
 ];
 
 const LogosContent = () => (
@@ -19,7 +47,9 @@ const LogosContent = () => (
           alt={logo.name}
           width={144}
           height={80}
-          className={`object-contain grayscale brightness-150 mix-blend-multiply w-20 h-12 sm:w-32 sm:h-16 lg:w-36 lg:h-20 ${logo.invert ? 'invert' : ''}`}
+          className={`object-contain grayscale brightness-150 mix-blend-multiply w-20 h-12 sm:w-32 sm:h-16 lg:w-36 lg:h-20 ${
+            logo.invert ? "invert" : ""
+          }`}
         />
       </div>
     ))}
@@ -53,16 +83,18 @@ const TrustedBy = () => {
           <div className="flex-1 relative w-full overflow-hidden flex items-center min-h-[60px] sm:min-h-[80px]">
             <div className="hidden sm:block absolute left-0 top-0 w-12 lg:w-20 h-full bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
             <div className="hidden sm:block absolute right-0 top-0 w-12 lg:w-20 h-full bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
-            
+
             <div className="w-full flex">
               <div className="flex-shrink-0 flex items-center animate-marquee-scroll">
                 <LogosContent />
               </div>
-              <div className="flex-shrink-0 flex items-center animate-marquee-scroll" aria-hidden="true">
+              <div
+                className="flex-shrink-0 flex items-center animate-marquee-scroll"
+                aria-hidden="true"
+              >
                 <LogosContent />
               </div>
             </div>
-            
           </div>
         </div>
       </div>
