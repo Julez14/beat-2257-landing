@@ -68,7 +68,7 @@ const HeroSection = () => {
               src="https://www.youtube.com/embed/ck1TQhSzOUY?autoplay=1&mute=1&vq=hd&controls=0&modestbranding=1&rel=0&showinfo=0&disablekb=1&playsinline=1&loop=1&playlist=ck1TQhSzOUY&origin=https://beat2257.com"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title="VibeLearn | AI for Students"
+              title="Beat2257"
             />
           </div>
         </div>

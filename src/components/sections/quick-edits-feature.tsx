@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BarChartHorizontalBig, Chrome } from "lucide-react";
+import { Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const QuickEditsFeature = () => {
@@ -25,18 +25,17 @@ const QuickEditsFeature = () => {
         <div className="flex flex-col gap-4 order-1 lg:order-2">
           <div className="flex items-center gap-3">
             <div className="p-2.5 bg-accent rounded-lg">
-              <BarChartHorizontalBig className="h-6 w-6 text-primary" />
+              <Bot className="h-6 w-6 text-primary" />
             </div>
-            <p className="font-bold text-sm text-primary tracking-wider">
-              EDIT
-            </p>
           </div>
 
           <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-            Quick Edits
+            Chat With Casey
           </h3>
 
-          <p className="text-lg text-muted-foreground">Make any edit fast.</p>
+          <p className="text-lg text-muted-foreground">
+            Ask Casey specific questions about the case.
+          </p>
 
           <div className="mt-4">
             <div className="h-12 w-fit">
@@ -44,10 +43,7 @@ const QuickEditsFeature = () => {
                 asChild
                 className="h-full w-fit px-6 text-base font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200"
               >
-                <Link
-                  href="https://vibelearn.com/extension"
-                  className="flex items-center gap-2"
-                >
+                <Link href="" className="flex items-center gap-2">
                   Sign Up
                 </Link>
               </Button>
