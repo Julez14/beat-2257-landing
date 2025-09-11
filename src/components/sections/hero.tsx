@@ -61,11 +61,11 @@ const HeroSection = () => {
       </div>
       <div className="container mt-6 px-2 sm:mt-0 sm:px-8">
         <div className="relative translate-y-0 overflow-hidden rounded-xl border border-white/50 bg-white/20 p-3 shadow-lg opacity-100 transition-all duration-1000">
-          <div className="relative aspect-video w-full">
+          <div className="relative aspect-video w-full overflow-hidden">
             <iframe
               id="video"
-              className="pointer-events-none h-full w-full rounded-lg"
-              src="https://www.youtube.com/embed/nRBj-OZeLec?autoplay=1&mute=1&vq=hd&controls=0&modestbranding=1&rel=0&showinfo=0&disablekb=1&playsinline=1&loop=1&playlist=nRBj-OZeLec&origin=https://vibegrade.com"
+              className="pointer-events-none h-[110%] w-[110%] rounded-lg scale-110 -translate-x-[5%] -translate-y-[5%]"
+              src="https://www.youtube.com/embed/ck1TQhSzOUY?autoplay=1&mute=1&vq=hd&controls=0&modestbranding=1&rel=0&showinfo=0&disablekb=1&playsinline=1&loop=1&playlist=ck1TQhSzOUY&origin=https://beat2257.com"
               allow="autoplay; encrypted-media"
               allowFullScreen
               title="VibeLearn | AI for Students"
