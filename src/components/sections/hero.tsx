@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import { Chrome } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -19,14 +17,24 @@ const HeroSection = () => {
                 </div>
                 <div className="hidden sm:block sm:mb-4" />
                 <h1 className="font-sans text-center text-3xl font-bold leading-tight text-primary transition-all sm:text-5xl sm:leading-tight md:text-5xl lg:text-7xl">
-                  The AI Business Case Solver
-                  <br />
-                  <span className="font-black text-[#111111] underline decoration-primary decoration-4 underline-offset-8">
+                  <span
+                    className="block hero-reveal"
+                    style={{ animationDelay: "60ms" }}
+                  >
+                    The AI Business Case Solver
+                  </span>
+                  <span
+                    className="block font-black text-[#111111] underline-draw hero-reveal"
+                    style={{ animationDelay: "180ms" }}
+                  >
                     that just works
                   </span>
                 </h1>
               </div>
-              <p className="my-0 max-w-sm text-base font-semibold text-[#2D2BCA] animate-in fade-in slide-in-from-bottom-6 duration-100 sm:my-2 sm:max-w-xl sm:text-lg md:max-w-3xl md:text-2xl">
+              <p
+                className="my-0 max-w-sm text-base font-semibold text-[#2D2BCA] sm:my-2 sm:max-w-xl sm:text-lg md:max-w-3xl md:text-2xl hero-reveal"
+                style={{ animationDelay: "300ms" }}
+              >
                 Beat2257 is the only case-solving tool that prepares you for
                 class. <br />
                 <span className="font-serif text-base font-bold italic text-[#111111] underline sm:text-xl md:text-2xl">
@@ -37,7 +45,10 @@ const HeroSection = () => {
                 <div className="flex w-full flex-col items-center justify-center gap-2 sm:w-fit">
                   <div className="flex w-full flex-col items-center gap-2 sm:w-fit sm:flex-row sm:items-start">
                     <div className="flex w-full flex-col items-center sm:w-fit">
-                      <div className="flex w-fit flex-col items-center">
+                      <div
+                        className="flex w-fit flex-col items-center hero-reveal"
+                        style={{ animationDelay: "420ms" }}
+                      >
                         <div className="h-12 w-fit sm:h-14">
                           <Link
                             href="/extension"

@@ -10,29 +10,29 @@ import {
 
 const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
-    question: "What is VibeGrade?",
+    question: "Will this cost money?",
     answer:
       "VibeGrade is the AI essay grader that works directly in Google Docs, Canvas, and other LMS platforms with your own customized rubric criteria to deliver personalized feedback and a final grade breakdown while checking for plagiarism and AI writing on essays.",
   },
   {
-    question: "How is it different from ChatGPT?",
+    question: "Will I get in trouble for using this?",
     answer:
       "VibeGrade is an AI essay grader specially designed to help educators grade essays with responsible and secure use of AI, whereas ChatGPT is a general purpose chatbot. Although ChatGPT can provide general feedback on essays, it makes it hard to pinpoint specific areas for improvement. ChatGPT's performance is inconsistent and often requires tweaking prompts, leading to varied results. VibeGrade offers consistent outcomes instantly without any complicated setup and annotations so teachers can instantly see successes and issues, saving hours of time. Unlike ChatGPT, which lacks built-in plagiarism and AI writing detection, VibeGrade includes these features to ensure academic integrity so teachers don't have to pay for other expensive tools.",
   },
   {
-    question: "How does it know the criteria?",
+    question: "How is this different from ChatGPT?",
     answer:
       "VibeGrade adapts to your unique rubric, analyzing student work solely based on the criteria you provide, ensuring accurate, personalized grading. Simply provide the level 4 section of your rubric, and VibeGrade will take care of the rest!",
   },
   {
-    question: "How accurate is the grade estimate?",
+    question: "How accurate is it?",
     answer:
       "Our grade estimates are designed for precision, typically within ±3% of the final grade.",
   },
   {
-    question: "Doesn't AI introduce more bias?",
+    question: "What if I'm not satisfied?",
     answer:
-      "We take pride in VibeGrade being the most fair and objective grading tool available. We believe that the professional judgement of teachers is key to fair grading, which is why our tools only use the criteria and grade level provided by the teacher to evaluate work. We acknowledge the biases that generative AI technology may introduce, which is why we rigourously test our systems, and always remind our users that teachers are in the driver's seat.",
+      "Send me an email within three days of purchase and I will give you a full refund.",
   },
   {
     question: "Will VibeGrade replace teachers?",

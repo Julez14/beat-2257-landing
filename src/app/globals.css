@@ -208,3 +208,57 @@
 nextjs-portal {
   display: none !important;
 }
+
+/* --------------------------------------------------
+   Hero startup animations (dependency-free)
+   - .hero-reveal: soft rise, blur-out, scale-in
+   - .underline-draw: animated accent marker behind text
+   Usage: add .hero-reveal and stagger with inline style animationDelay
+-------------------------------------------------- */
+@keyframes hero-reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.985);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-reveal {
+  opacity: 0;
+  will-change: transform, opacity, filter;
+  animation: hero-reveal-up 800ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes hero-underline-draw {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.underline-draw {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-draw::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.08em; /* sits just under glyphs */
+  height: 0.42em;
+  width: 0%;
+  background: var(--color-accent);
+  opacity: 0.85;
+  border-radius: 6px;
+  z-index: -1;
+  animation: hero-underline-draw 1400ms cubic-bezier(0.22, 1, 0.36, 1) 240ms
+    forwards;
+}
