@@ -1,43 +1,47 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+// Video component for the quick edits feature demonstration
+const QuickEditsVideo = () => (
+  <div className="relative aspect-[16/10] w-full overflow-hidden">
+    <iframe
+      className="pointer-events-none h-full w-full rounded-xl scale-[1.12] transform origin-center"
+      src="https://www.youtube.com/embed/FvkD3Grx064?autoplay=1&mute=1&vq=hd&controls=0&modestbranding=1&rel=0&showinfo=0&disablekb=1&playsinline=1&loop=1&playlist=FvkD3Grx064&origin=https://beat2257.com"
+      allow="autoplay; encrypted-media"
+      allowFullScreen
+      title="Beat2257 Quick Edits Feature"
+    />
+  </div>
+);
+
 const QuickEditsFeature = () => {
   return (
-    <section className="py-8 sm:py-12">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-        {/* Left Column: Image */}
-        <div className="flex justify-center order-2 lg:order-1">
-          <div className="relative w-full rounded-xl border shadow-lg aspect-[4/3] max-w-xl">
-            <Image
-              src="https://vibelearn.com/_next/image?url=%2Fimages%2Ffeatures%2Fquick-edits.png&w=1920&q=75"
-              alt="A mockup of Google Docs showing VibeLearn's quick edit suggestions in a sidebar, with red and blue highlights on the text."
-              fill
-              objectFit="cover"
-              className="rounded-xl"
-            />
-          </div>
+    <section className="py-16 md:py-20">
+      <div className="grid grid-cols-1 lg:grid-cols-[1.35fr_1fr] items-center gap-10 lg:gap-12 xl:gap-16">
+        {/* Left Column: Video */}
+        <div className="relative overflow-hidden rounded-2xl border border-white/60 bg-white/30 p-2.5 sm:p-3 md:p-4 shadow-xl lg:-ml-10 xl:-ml-16">
+          <QuickEditsVideo />
         </div>
 
-        {/* Right Column: Content */}
-        <div className="flex flex-col gap-4 order-1 lg:order-2">
+        {/* Right Column: Text Content */}
+        <div className="flex flex-col items-start text-left max-w-xl">
           <div className="flex items-center gap-3">
             <div className="p-2.5 bg-accent rounded-lg">
               <Bot className="h-6 w-6 text-primary" />
             </div>
           </div>
 
-          <h3 className="text-3xl md:text-4xl font-bold text-foreground">
+          <h3 className="mt-3 md:mt-4 text-3xl md:text-[40px] leading-[1.15] font-semibold text-foreground">
             Chat With Casey
           </h3>
 
-          <p className="text-lg text-muted-foreground">
-            Ask Casey specific questions about the case.
+          <p className="mt-3 md:mt-4 text-base md:text-lg leading-relaxed text-muted-foreground max-w-md">
+            Ask specific questions about the case.
           </p>
 
-          <div className="mt-4">
+          <div className="mt-8 md:mt-10">
             <div className="h-12 w-fit">
               <Button
                 asChild

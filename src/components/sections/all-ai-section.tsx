@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Chrome } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const icons = [
@@ -33,8 +32,8 @@ const icons = [
 const AllAiSection = () => {
   return (
     <section className="container">
-      <div className="relative bg-secondary rounded-xl lg:rounded-2xl my-6 lg:my-12 py-8 lg:py-16 px-8 sm:px-12 md:px-16 lg:px-24 border border-border">
-        {icons.map((icon) => (
+      <div className="relative bg-secondary rounded-2xl my-8 sm:my-12 p-8 sm:p-12 border border-border">
+        {/* {icons.map((icon) => (
           <Image
             key={icon.alt}
             src={icon.src}
@@ -44,16 +43,16 @@ const AllAiSection = () => {
             className={icon.className}
             loading="lazy"
           />
-        ))}
+        ))} */}
 
-        <div className="relative z-10 flex flex-col items-center gap-6">
-          <h2 className="font-sans text-center text-2xl sm:text-4xl font-bold text-foreground transition-all leading-snug">
+        <div className="relative z-10 flex flex-col items-center gap-5 sm:gap-6">
+          <h2 className="font-display text-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
             Optimized for{" "}
-            <mark className="bg-accent text-foreground px-2 rounded-lg py-1">
+            <mark className="relative bg-accent inline-block px-2 py-1 sm:px-2.5 sm:py-1.5 -rotate-1 rounded-lg font-serif italic shadow-sm [font-size:1.02em]">
               accounting cases.
             </mark>
           </h2>
-          <p className="text-center font-sans lg:max-w-xl max-w-sm sm:max-w-lg text-muted-foreground text-sm sm:text-base md:text-lg font-medium">
+          <p className="text-center font-sans max-w-2xl text-muted-foreground text-lg sm:text-xl font-medium leading-relaxed">
             VibeLearn Agent brings together ChatGPT, Gemini, Claude, Perplexity
             and more in a single Chrome extension, giving you the power of all
             AI models with one click.
@@ -61,7 +60,7 @@ const AllAiSection = () => {
           <div className="h-12 w-fit">
             <Button
               asChild
-              className="h-full w-fit px-6 text-base font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200"
+              className="h-full w-fit text-base sm:text-lg font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 px-6 sm:px-7"
             >
               <Link
                 href="https://vibelearn.com/extension"

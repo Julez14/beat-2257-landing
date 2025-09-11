@@ -56,14 +56,14 @@ const WorksWhereYouWork = () => {
             />
           </div>
         ))} */}
-        <div className="flex flex-col items-center text-center gap-4">
-          <h2 className="font-display text-4xl font-bold text-foreground">
+        <div className="flex flex-col items-center text-center gap-5 sm:gap-6">
+          <h2 className="font-display text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
             Get into{" "}
-            <mark className="relative bg-accent inline-block px-2 py-1 -rotate-1 rounded-lg">
+            <mark className="relative bg-accent inline-block px-2 py-1 sm:px-2.5 sm:py-1.5 -rotate-1 rounded-lg font-serif italic shadow-sm [font-size:1.02em]">
               Ivey
             </mark>
           </h2>
-          <p className="text-lg max-w-2xl text-muted-foreground font-medium">
+          <p className="text-lg sm:text-xl max-w-2xl text-muted-foreground font-medium leading-relaxed">
             Your peers are already leveraging AI tools to get ahead. This isn’t
             about working <em>harder</em>, it’s about working <em>smarter</em>.
           </p>
@@ -72,7 +72,7 @@ const WorksWhereYouWork = () => {
               href="/extension"
               className="h-full w-fit flex items-center justify-center group"
             >
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-primary font-bold text-primary-foreground !rounded-lg shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 h-full w-fit text-base px-6">
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-primary font-bold text-primary-foreground !rounded-lg shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 h-full w-fit text-base sm:text-lg px-6 sm:px-7">
                 <div className="flex justify-center items-center gap-2">
                   Sign Up
                 </div>
