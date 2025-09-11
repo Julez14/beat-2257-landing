@@ -65,8 +65,7 @@ const WorksWhereYouWork = () => {
           </h2>
           <p className="text-lg max-w-2xl text-muted-foreground font-medium">
             Your peers are already leveraging AI tools to get ahead. This isn’t
-            about working <em>harder</em>, it’s about working <em>smarter</em>{" "}
-            and proving to Ivey that you’re top-tier.
+            about working <em>harder</em>, it’s about working <em>smarter</em>.
           </p>
           <div className="h-12 w-fit">
             <Link
@@ -75,7 +74,7 @@ const WorksWhereYouWork = () => {
             >
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-primary font-bold text-primary-foreground !rounded-lg shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 h-full w-fit text-base px-6">
                 <div className="flex justify-center items-center gap-2">
-                  Get Started
+                  Sign Up
                 </div>
               </button>
             </Link>

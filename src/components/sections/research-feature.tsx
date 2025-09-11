@@ -42,7 +42,7 @@ const ResearchFeature = () => {
                   href="https://vibelearn.com/extension"
                   className="flex items-center gap-2"
                 >
-                  Get Started
+                  Sign Up
                 </Link>
               </Button>
             </div>
