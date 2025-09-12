@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 // Extend the Window interface to include Tally
 declare global {
@@ -59,6 +61,15 @@ export default function WaitlistSignupPage() {
         overflow: "hidden",
       }}
     >
+      {/* Back Navigation */}
+      <Link
+        href="/"
+        className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors bg-background/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-border"
+      >
+        <ArrowLeft className="h-4 w-4" />
+        Back to Home
+      </Link>
+
       <iframe
         data-tally-src="https://tally.so/r/n04aQ0?transparentBackground=1"
         width="100%"
