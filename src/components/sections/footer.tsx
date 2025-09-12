@@ -27,18 +27,29 @@ const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const socialLinks = [
-  { name: "X", href: "#", icon: <XIcon className="h-5 w-5" /> },
-  { name: "Facebook", href: "#", icon: <Facebook className="h-5 w-5" /> },
-  { name: "LinkedIn", href: "#", icon: <Linkedin className="h-5 w-5" /> },
-  { name: "Instagram", href: "#", icon: <Instagram className="h-5 w-5" /> },
+  {
+    name: "X",
+    href: "https://x.com/julianlaxman",
+    icon: <XIcon className="h-5 w-5" />,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/julian-laxman",
+    icon: <Linkedin className="h-5 w-5" />,
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/beat.2257",
+    icon: <Instagram className="h-5 w-5" />,
+  },
 ];
 
 const footerLinks = {
   product: [{ name: "Chrome Extension", href: "#" }],
   company: [{ name: "Contact Us", href: "#" }],
   legal: [
-    { name: "Privacy Policy", href: "#" },
-    { name: "Terms of Service", href: "#" },
+    { name: "Privacy Policy", href: "/privacy" },
+    { name: "Terms of Service", href: "/terms" },
   ],
   useCases: [{ name: "Cursor for Writing", href: "#" }],
 };
@@ -55,8 +66,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted-foreground">
-              Vibe is the only AI Productivity Tool that meets you where you
-              already are. Google Docs, PDFs, or anywhere on the Web.
+              Beat2257 is the only business case solver designed for students,
+              by students.
             </p>
             <div className="mt-6 flex space-x-4">
               {socialLinks.map((item) => (
@@ -64,6 +75,8 @@ export default function Footer() {
                   key={item.name}
                   href={item.href}
                   className="text-muted-foreground hover:text-primary transition-colors"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span className="sr-only">{item.name}</span>
                   {item.icon}
