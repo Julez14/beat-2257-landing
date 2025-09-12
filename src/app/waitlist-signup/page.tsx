@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 
 // Extend the Window interface to include Tally
 declare global {
@@ -14,12 +14,17 @@ declare global {
 }
 
 export default function WaitlistSignupPage() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const init = () => {
       if (window.Tally) {
         window.Tally.loadEmbeds();
+        // Give a small delay to ensure the form is rendered
+        setTimeout(() => setIsLoading(false), 500);
       }
     };
 
@@ -52,6 +57,15 @@ export default function WaitlistSignupPage() {
     };
   }, []);
 
+  // Handle iframe load event
+  const handleIframeLoad = () => {
+    setIframeLoaded(true);
+    // Hide loading after both script and iframe are loaded
+    if (window.Tally) {
+      setTimeout(() => setIsLoading(false), 300);
+    }
+  };
+
   return (
     <div
       className="fixed inset-0 w-full h-full"
@@ -64,11 +78,28 @@ export default function WaitlistSignupPage() {
       {/* Back Navigation */}
       <Link
         href="/"
-        className="absolute top-4 left-4 z-10 inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors bg-background/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-border"
+        className="absolute top-4 left-4 z-20 inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors bg-background/80 backdrop-blur-sm px-3 py-2 rounded-lg border border-border"
       >
         <ArrowLeft className="h-4 w-4" />
         Back to Home
       </Link>
+
+      {/* Loading Indicator */}
+      {isLoading && (
+        <div className="absolute inset-0 z-10 flex items-center justify-center bg-background/95 backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-4">
+            <div className="relative">
+              <Loader2 className="h-12 w-12 animate-spin text-primary" />
+              <div className="absolute inset-0 h-12 w-12 rounded-full border-4 border-primary/20"></div>
+            </div>
+            <div className="text-center">
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                Loading Waitlist Form
+              </h3>
+            </div>
+          </div>
+        </div>
+      )}
 
       <iframe
         data-tally-src="https://tally.so/r/n04aQ0?transparentBackground=1"
@@ -80,6 +111,7 @@ export default function WaitlistSignupPage() {
         title="Beat2257 Waitlist"
         className="absolute top-0 right-0 bottom-0 left-0 border-0"
         loading="eager"
+        onLoad={handleIframeLoad}
       />
     </div>
   );
