@@ -31,10 +31,10 @@ export default function Header() {
                 </Link>
               </div>
               <div className="hidden lg:flex items-center space-x-2 xl:space-x-4">
-                <Link href="/login" className={loginButtonClasses}>
+                {/* <Link href="/login" className={loginButtonClasses}>
                   <LogIn className="h-5 w-5" />
                   <span>Login</span>
-                </Link>
+                </Link> */}
                 <Link href="/signup" className={signupButtonClasses}>
                   <UserPlus className="h-5 w-5" />
                   <span>Sign Up</span>

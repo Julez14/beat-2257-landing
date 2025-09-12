@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -7,6 +9,7 @@ import {
   Linkedin,
   Instagram,
 } from "lucide-react";
+import { toast } from "sonner";
 
 const XIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
@@ -55,6 +58,23 @@ const footerLinks = {
 };
 
 export default function Footer() {
+  const copyEmailToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText("julian.laxman@gmail.com");
+      toast.success("Email copied to clipboard!", {
+        description: (
+          <span style={{ color: "#4341ff" }}>julian.laxman@gmail.com</span>
+        ),
+        duration: 3000,
+      });
+    } catch (err) {
+      console.error("Failed to copy email: ", err);
+      toast.error("Failed to copy email", {
+        description: "Please try again",
+        duration: 3000,
+      });
+    }
+  };
   return (
     <footer className="bg-slate-50">
       <div className="container py-12 px-4 sm:px-6 lg:px-8">
@@ -91,12 +111,21 @@ export default function Footer() {
               <ul className="mt-4 space-y-3">
                 {footerLinks.company.map((item) => (
                   <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      {item.name}
-                    </Link>
+                    {item.name === "Contact Us" ? (
+                      <button
+                        onClick={copyEmailToClipboard}
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors cursor-pointer"
+                      >
+                        {item.name}
+                      </button>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
