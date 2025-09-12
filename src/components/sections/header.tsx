@@ -35,7 +35,7 @@ export default function Header() {
                   <LogIn className="h-5 w-5" />
                   <span>Login</span>
                 </Link> */}
-                <Link href="/signup" className={signupButtonClasses}>
+                <Link href="/waitlist-signup" className={signupButtonClasses}>
                   <UserPlus className="h-5 w-5" />
                   <span>Sign Up</span>
                 </Link>
@@ -73,7 +73,7 @@ export default function Header() {
                 <span>Login</span>
               </Link>
               <Link
-                href="/signup"
+                href="/waitlist-signup"
                 className={`${signupButtonClasses} w-full justify-start`}
               >
                 <UserPlus className="h-5 w-5" />

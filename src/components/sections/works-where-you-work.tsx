@@ -69,7 +69,7 @@ const WorksWhereYouWork = () => {
           </p>
           <div className="h-12 w-fit">
             <Link
-              href="/extension"
+              href="/waitlist-signup"
               className="h-full w-fit flex items-center justify-center group"
             >
               <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap disabled:pointer-events-none disabled:opacity-50 shrink-0 outline-none bg-primary font-bold text-primary-foreground !rounded-lg shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 h-full w-fit text-base sm:text-lg px-6 sm:px-7">

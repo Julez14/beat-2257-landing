@@ -51,7 +51,7 @@ const HeroSection = () => {
                       >
                         <div className="h-12 w-fit sm:h-14">
                           <Link
-                            href="/extension"
+                            href="/waitlist-signup"
                             className="group flex h-full w-fit items-center justify-center"
                           >
                             <button className="inline-flex h-full w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 group-hover:translate-y-[2px] group-hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] group-active:translate-y-[4px] group-active:shadow-[0_2px_0_0_var(--color-primary-shadow)]">
