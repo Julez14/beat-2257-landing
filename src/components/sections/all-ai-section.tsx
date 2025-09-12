@@ -53,9 +53,8 @@ const AllAiSection = () => {
             </mark>
           </h2>
           <p className="text-center font-sans max-w-2xl text-muted-foreground text-lg sm:text-xl font-medium leading-relaxed">
-            VibeLearn Agent brings together ChatGPT, Gemini, Claude, Perplexity
-            and more in a single Chrome extension, giving you the power of all
-            AI models with one click.
+            Beat2257 is trained on real cases. That means you don’t just get
+            generic answers—you get reliable, case‑ready guidance.
           </p>
           <div className="h-12 w-fit">
             <Button

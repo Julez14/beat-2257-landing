@@ -7,55 +7,45 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+/*
+- Will this cost money?
+- Will I get in trouble for using this?
+- How is this different from ChatGPT?
+- How accurate is it?
+- What if I am not satisfied?
+- Why are you building this?
+*/
 
 const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
-    question: "Will this cost money?",
+    question: "How is this different from ChatGPT?",
     answer:
-      "VibeGrade is the AI essay grader that works directly in Google Docs, Canvas, and other LMS platforms with your own customized rubric criteria to deliver personalized feedback and a final grade breakdown while checking for plagiarism and AI writing on essays.",
+      "ChatGPT was designed for general use. Beat2257 has been fine-tuned specifically to solve business cases. This means that Beat2257 has a much better solution accuracy and has been engineered to display results directly on a super-T.",
   },
   {
     question: "Will I get in trouble for using this?",
     answer:
-      "VibeGrade is an AI essay grader specially designed to help educators grade essays with responsible and secure use of AI, whereas ChatGPT is a general purpose chatbot. Although ChatGPT can provide general feedback on essays, it makes it hard to pinpoint specific areas for improvement. ChatGPT's performance is inconsistent and often requires tweaking prompts, leading to varied results. VibeGrade offers consistent outcomes instantly without any complicated setup and annotations so teachers can instantly see successes and issues, saving hours of time. Unlike ChatGPT, which lacks built-in plagiarism and AI writing detection, VibeGrade includes these features to ensure academic integrity so teachers don't have to pay for other expensive tools.",
-  },
-  {
-    question: "How is this different from ChatGPT?",
-    answer:
-      "VibeGrade adapts to your unique rubric, analyzing student work solely based on the criteria you provide, ensuring accurate, personalized grading. Simply provide the level 4 section of your rubric, and VibeGrade will take care of the rest!",
+      "Ivey material is copyright-protected so you should NEVER directly upload cases to any third-party platform. Follow this and you'll be good :)",
   },
   {
     question: "How accurate is it?",
     answer:
-      "Our grade estimates are designed for precision, typically within ±3% of the final grade.",
+      "Beat2257 is not perfect. It will sometimes get calculations wrong. But, it offers an excellent way to check your work and coming into class with a Beat2257-generated solution is significantly better than coming to class unprepared.",
+  },
+  {
+    question: "Why did you build this?",
+    answer:
+      "Being a student can be tough and I know how easy it is to fall behind. As a computer science student coming from a non-business background, I understand how difficult this course is and how stressful it can be to manage its workload. I built Beat2257 to make getting into Ivey more manageable.",
+  },
+  {
+    question: "Will this cost money?",
+    answer:
+      "Short Answer: Yes. Long Answer: I put a lot of time and effort into this. Building Beat2257 while managing schoolwork, internship recruiting, extracurriculars, part-time jobs, etc is tough. I think its fair that I make a little bit of money off of this. Plus, I am already paying for web hosting and AI tokens.",
   },
   {
     question: "What if I'm not satisfied?",
     answer:
-      "Send me an email within three days of purchase and I will give you a full refund.",
-  },
-  {
-    question: "Will VibeGrade replace teachers?",
-    answer:
-      "Absolutely not. VibeGrade enhances your ability to provide fair and efficient grading, reinforcing the essential role of teachers in education.",
-  },
-  {
-    question: "Can I buy for my school or district?",
-    answer: (
-      <>
-        Yes! We offer special pricing and packages for schools and districts.{" "}
-        <a
-          href="https://vibegrade.com/contact-sales"
-          className="text-primary hover:underline font-medium"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Contact our team
-        </a>{" "}
-        to discuss volume pricing, implementation support, and custom solutions
-        tailored to your institution's needs.
-      </>
-    ),
+      "Send me an email at julian.laxman@gmail.com within three days of purchase and I will give you a full refund.",
   },
 ];
 
