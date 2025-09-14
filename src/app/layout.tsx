@@ -6,8 +6,8 @@ import { Toaster } from "@/components/ui/sonner";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Beat-2257 - Accounting Education",
-  description: "Interactive accounting worksheets and education platform",
+  title: "Beat2257",
+  description: "The best accounting case solver.",
   generator: "Next.js",
 };
 
