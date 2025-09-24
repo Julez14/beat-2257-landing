@@ -49,7 +49,7 @@ const AllAiSection = () => {
           <h2 className="font-display text-center text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-[1.1] text-foreground">
             Optimized for{" "}
             <mark className="relative bg-accent inline-block px-2 py-1 sm:px-2.5 sm:py-1.5 -rotate-1 rounded-lg font-serif italic shadow-sm [font-size:1.02em]">
-              accounting cases.
+              accounting cases
             </mark>
           </h2>
           <p className="text-center font-sans max-w-2xl text-muted-foreground text-lg sm:text-xl font-medium leading-relaxed">
