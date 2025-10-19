@@ -84,8 +84,16 @@ export default function PricingSection() {
 
                 <div className="flex w-full flex-col items-start gap-6 sm:w-fit">
                   <div className="h-12 w-fit sm:h-14">
-                    <Link
-                      href="/checkout"
+                    <a
+                      href={`${
+                        process.env.NEXT_PUBLIC_APP_URL ||
+                        "https://app.beat2257.com"
+                      }/login?redirect=${encodeURIComponent(
+                        (typeof window !== "undefined"
+                          ? window.location.origin
+                          : process.env.NEXT_PUBLIC_LANDING_URL ||
+                            "https://beat2257.com") + "/checkout"
+                      )}`}
                       className="group flex h-full w-fit items-center justify-center"
                     >
                       <button className="inline-flex h-full w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 group-hover:translate-y-[2px] group-hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] group-active:translate-y-[4px] group-active:shadow-[0_2px_0_0_var(--color-primary-shadow)]">
@@ -93,7 +101,7 @@ export default function PricingSection() {
                           Get Access
                         </div>
                       </button>
-                    </Link>
+                    </a>
                   </div>
 
                   <div className="space-y-1 text-sm text-[#7A8DBA]">

@@ -17,8 +17,18 @@ export default function CheckoutPage() {
 
   useEffect(() => {
     if (!authLoading && !user) {
-      // Redirect to sign up if not authenticated
-      router.push("/auth/signup");
+      // Redirect to SaaS app login with return URL
+      const appUrl =
+        process.env.NEXT_PUBLIC_APP_URL || "https://app.beat2257.com";
+      const returnUrl =
+        typeof window !== "undefined"
+          ? encodeURIComponent(window.location.href)
+          : encodeURIComponent(
+              `${
+                process.env.NEXT_PUBLIC_LANDING_URL || "https://beat2257.com"
+              }/checkout`
+            );
+      window.location.href = `${appUrl}/login?redirect=${returnUrl}`;
     }
   }, [user, authLoading, router]);
 
