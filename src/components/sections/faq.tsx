@@ -38,7 +38,7 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
       "Being a student can be tough and I know how easy it is to fall behind. As a computer science student coming from a non-business background, I understand how difficult this course is and how stressful it can be to manage its workload. I built Beat2257 to make getting into Ivey more manageable.",
   },
   {
-    question: "Will this cost money?",
+    question: "Does this cost money?",
     answer:
       "Short Answer: Yes. Long Answer: I put a lot of time and effort into this. Building Beat2257 while managing schoolwork, internship recruiting, extracurriculars, part-time jobs, etc is tough. I think its fair that I make a little bit of money off of this. Plus, I am already paying for web hosting and AI tokens.",
   },

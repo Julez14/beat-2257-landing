@@ -87,3 +87,40 @@ The `ErrorReporter` component provides development error capture and reporting t
 - `components.json` - shadcn/ui configuration
 
 When modifying core files, ensure visual editing capability remains intact as it's the primary value proposition of this application.
+
+## About Beat2257
+
+Beat2257 is an AI-powered business case solver specifically designed for accounting students preparing for Ivey Business School. Unlike general-purpose AI tools like ChatGPT, Claude, or Gemini, Beat2257 has been fine-tuned and trained on real accounting cases to provide specialized, case-ready guidance.
+
+**Core Value Proposition:**
+
+- Helps students prepare for class discussions and avoid missing contribution marks
+- Enables students to "work smarter, not harder" by leveraging AI for case preparation
+- Positioned as a tool to help students get into and succeed at Ivey Business School
+
+**Key Features:**
+
+1. **Unlimited Case Solving** - Students can run any business accounting case through the system
+2. **Transaction Understanding** - Provides detailed rationale behind each journal entry with visual explanations
+3. **Casey AI Assistant** - An interactive chat feature that allows students to ask specific questions about cases
+
+**Product Philosophy:**
+
+- Built "by students, for students" (created by a computer science student from a non-business background)
+- Optimized specifically for accounting cases, not general use
+- Designed to display results directly on super-T accounting worksheets
+- Training data includes real business cases for reliable, case-specific guidance
+
+**Target Audience:**
+
+- Accounting students preparing for Ivey Business School
+- Students managing heavy workloads who need efficient case preparation
+
+**Important Usage Guidelines:**
+
+- Users should never directly upload Ivey copyright-protected cases to third-party platforms
+- The tool is not perfect and may occasionally get calculations wrong
+- Positioned as a way to check work and prepare for class, not replace learning
+
+**Technical Note:**
+The founder acknowledges the tool requires ongoing costs for web hosting and AI tokens, justifying the paid model while being transparent about the effort required to maintain the platform alongside schoolwork and other commitments.
