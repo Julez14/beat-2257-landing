@@ -36,7 +36,7 @@ export default function PricingSection() {
       <div className="container relative">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/80 px-4 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.32em] text-[#4341FF] shadow-[0_18px_56px_rgba(67,65,255,0.18)]">
-            Fall 2025 plan
+            Fall 2025
             <Sparkles className="size-3" aria-hidden />
           </span>
           <h2 className="mt-6 text-4xl font-bold tracking-tight text-[#111111] sm:text-5xl">
@@ -64,7 +64,7 @@ export default function PricingSection() {
             />
 
             <div className="relative grid gap-12 p-10 sm:p-14 md:grid-cols-[1.05fr_0.95fr] md:gap-16 md:p-16">
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col justify-center gap-8">
                 <div className="flex flex-col gap-6">
                   <div className="flex flex-col items-start gap-2">
                     <p className="text-6xl font-black tracking-tight text-[#111111] sm:text-6xl sm:leading-none">
@@ -85,7 +85,7 @@ export default function PricingSection() {
                 <div className="flex w-full flex-col items-start gap-6 sm:w-fit">
                   <div className="h-12 w-fit sm:h-14">
                     <Link
-                      href="/waitlist-signup"
+                      href="/checkout"
                       className="group flex h-full w-fit items-center justify-center"
                     >
                       <button className="inline-flex h-full w-fit items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-primary px-6 text-base font-bold text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] transition-all duration-200 disabled:pointer-events-none disabled:opacity-50 group-hover:translate-y-[2px] group-hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] group-active:translate-y-[4px] group-active:shadow-[0_2px_0_0_var(--color-primary-shadow)]">

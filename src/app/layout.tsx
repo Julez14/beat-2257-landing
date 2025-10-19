@@ -4,6 +4,7 @@ import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
 import ErrorReporter from "@/components/ErrorReporter";
 import { Toaster } from "@/components/ui/sonner";
 import Script from "next/script";
+import { AuthProvider } from "@/components/auth-provider";
 
 export const metadata: Metadata = {
   title: "Beat2257",
@@ -30,9 +31,11 @@ export default function RootLayout({
           data-debug="true"
           data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
         />
-        {children}
-        <Toaster />
-        <VisualEditsMessenger />
+        <AuthProvider>
+          {children}
+          <Toaster />
+          <VisualEditsMessenger />
+        </AuthProvider>
       </body>
     </html>
   );
