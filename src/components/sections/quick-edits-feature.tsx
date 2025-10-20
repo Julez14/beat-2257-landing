@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { AuthAwareCTA } from "../auth-aware-cta";
 
 // Video component for the quick edits feature demonstration
 const QuickEditsVideo = () => (
@@ -43,17 +44,7 @@ const QuickEditsFeature = () => {
 
           <div className="mt-8 md:mt-10">
             <div className="h-12 w-fit">
-              <Button
-                asChild
-                className="h-full w-fit px-6 text-base font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200"
-              >
-                <Link
-                  href="/waitlist-signup"
-                  className="flex items-center gap-2"
-                >
-                  Sign Up
-                </Link>
-              </Button>
+              <AuthAwareCTA buttonClassName="h-full w-fit px-6 text-base font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200" />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { AuthAwareCTA } from "../auth-aware-cta";
 
 const icons = [
   {
@@ -57,14 +58,7 @@ const AllAiSection = () => {
             generic answers—you get reliable, case‑ready guidance.
           </p>
           <div className="h-12 w-fit">
-            <Button
-              asChild
-              className="h-full w-fit text-base sm:text-lg font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 px-6 sm:px-7"
-            >
-              <Link href="/waitlist-signup" className="flex items-center gap-2">
-                Sign Up
-              </Link>
-            </Button>
+            <AuthAwareCTA buttonClassName="h-full w-fit text-base sm:text-lg font-bold rounded-lg bg-primary text-primary-foreground shadow-[0_6px_0_0_var(--color-primary-shadow)] hover:bg-primary/90 hover:translate-y-[2px] hover:shadow-[0_4px_0_0_var(--color-primary-shadow)] active:translate-y-[4px] active:shadow-[0_2px_0_0_var(--color-primary-shadow)] transition-all duration-200 px-6 sm:px-7" />
           </div>
         </div>
       </div>
