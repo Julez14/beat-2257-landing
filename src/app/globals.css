@@ -262,3 +262,10 @@ nextjs-portal {
   animation: hero-underline-draw 1400ms cubic-bezier(0.22, 1, 0.36, 1) 240ms
     forwards;
 }
+
+/* GPU-accelerated button animations for smooth performance */
+.smooth-button-animation {
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

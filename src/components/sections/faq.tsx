@@ -64,7 +64,7 @@ export default function Faq() {
               <Accordion key={index} type="single" collapsible>
                 <AccordionItem
                   value={`item-${index}`}
-                  className="rounded-lg border border-gray-200 bg-gray-50 shadow-[0_6px_0_0_rgb(229,231,235)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_rgb(229,231,235)] transition-all duration-200"
+                  className="smooth-button-animation rounded-lg border border-gray-200 bg-gray-50 shadow-[0_6px_0_0_rgb(229,231,235)] hover:translate-y-[2px] hover:shadow-[0_4px_0_0_rgb(229,231,235)] transition-all duration-200"
                 >
                   <AccordionTrigger className="px-6 py-4 text-left font-bold text-lg text-gray-800 hover:no-underline">
                     {item.question}
