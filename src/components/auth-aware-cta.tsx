@@ -37,16 +37,10 @@ export function AuthAwareCTA({
 
   // Determine link and text based on auth state
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.beat2257.com";
-  const landingUrl =
-    typeof window !== "undefined"
-      ? window.location.origin
-      : process.env.NEXT_PUBLIC_LANDING_URL || "https://beat2257.com";
 
   const href = user
     ? appUrl // If signed in, go directly to app
-    : `${appUrl}/login?redirect=${encodeURIComponent(
-        landingUrl + "/checkout"
-      )}`; // If not, go to login with redirect to checkout
+    : `${appUrl}/login`; // If not, go to login (paywall will handle checkout)
 
   const text = user ? signedInText : signedOutText;
 

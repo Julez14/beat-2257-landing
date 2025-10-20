@@ -20,13 +20,7 @@ export default function Header() {
   const signupButtonClasses = `${commonBase} bg-primary text-primary-foreground ${baseButtonShadow}`;
 
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || "https://app.beat2257.com";
-  const landingUrl =
-    typeof window !== "undefined"
-      ? window.location.origin
-      : process.env.NEXT_PUBLIC_LANDING_URL || "https://beat2257.com";
-  const loginUrl = `${appUrl}/login?redirect=${encodeURIComponent(
-    landingUrl + "/checkout"
-  )}`;
+  const loginUrl = `${appUrl}/login`;
 
   return (
     <header className="relative">
