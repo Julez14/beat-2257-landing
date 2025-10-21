@@ -45,7 +45,7 @@ const faqItems: { question: string; answer: React.ReactNode }[] = [
   {
     question: "What if I'm not satisfied?",
     answer:
-      "Send me an email at julian.laxman@gmail.com within three days of purchase and I will give you a full refund.",
+      "Send me an email at julian.laxman@gmail.com within three days of purchase and I will give you a full refund minus transaction fees, which works out to $85.",
   },
 ];
 
